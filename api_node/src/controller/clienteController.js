@@ -17,9 +17,9 @@ module.exports = {
         return res.json(cliente[0]);
     },
     async store(req, res) {
-        const { nome, endereco, cpf, telefone, email } = req.body;
+        const { nome, endereco, data_nascimento } = req.body;
         const cliente = await Cliente.create({
-            nome, endereco, cpf, telefone, email
+            nome, endereco, data_nascimento
         });
         return res.json(cliente);
     },
@@ -30,14 +30,13 @@ module.exports = {
                 id: id
             }
         });
-
         return res.json(cliente);
     },
     async update(req, res) {
-        const { id, nome, endereco, cpf, telefone, email } = req.body;
+        const { id,nome, endereco, data_nascimento  } = req.body;
 
         const cliente = await Cliente.update({
-            nome, endereco, dataNascimento
+            nome, endereco, data_nascimento
         }, {
             where: {
                 id: id
