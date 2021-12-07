@@ -37,7 +37,7 @@ module.exports = {
         const { id, nome, endereco, cpf, telefone, email } = req.body;
 
         const cliente = await Cliente.update({
-            nome, endereco, cpf, telefone, email
+            nome, endereco, dataNascimento
         }, {
             where: {
                 id: id

@@ -1,10 +1,10 @@
 module.exports = {
-    dialect: 'mysql',
+    dialect: 'postgres',
     host: 'localhost',
-    port: '3305',
-    username: 'node',
+    port: '5432',
+    username: 'root',
     password: '123456',
-    database: 'vendas2',
+    database: 'crud_clientes',
     define: {
         timestamps: true,
         underscored: true

@@ -3,7 +3,7 @@ const ClienteController = require('./controller/ClienteController');
 
 const routes = express.Router();
 
-//ROTAS CLIENTES
+//ROUTES CLIENTES
 routes.post('/api/clientes', ClienteController.store)
 routes.get('/api/clientes', ClienteController.index)
 routes.get('/api/clientes/:id', ClienteController.findByid)

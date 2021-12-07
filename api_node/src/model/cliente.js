@@ -5,7 +5,7 @@ class Cliente extends Model {
         super.init({
             nome: DataTypes.STRING,
             endereco: DataTypes.STRING,
-            data_nascimento: DataTypes.STRING,
+            data_nascimento: DataTypes.DATE,
         },{sequelize})
     }
 }
