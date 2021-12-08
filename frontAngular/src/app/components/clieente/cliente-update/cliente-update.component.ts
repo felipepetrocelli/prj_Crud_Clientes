@@ -10,25 +10,31 @@ import { ClienteService } from '../cliente.service';
 })
 export class ClienteUpdateComponent implements OnInit {
   cliente!: Cliente;
+
   constructor(
     private clienteService: ClienteService,
     private router: Router,
     private route: ActivatedRoute
-  ) {}
+  ) { }
 
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get("id")
-    this.clienteService.readById(id).subscribe(cliente =>{
+    const id = this.route.snapshot.paramMap.get('id')
+    this.clienteService.readById(id).subscribe(cliente => {
       this.cliente = cliente
     });
   }
 
-  updateCliente(): void {}
+  updateCliente(): void {
+    this.clienteService.update(this.cliente).subscribe(() => {
+      this.clienteService.showMessage('Cliente atualizado com sucesso')
+      this.router.navigate(['/clientes']);
+    });
+  }
 
 
   cancel(): void {
     this.router.navigate(['/clientes'])
-  }
+  };
 
 }

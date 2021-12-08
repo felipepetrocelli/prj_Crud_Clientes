@@ -40,6 +40,16 @@ export class ClienteService {
     const url = `${this.baseUrl}/${cliente.id}}`
     return this.http.put<Cliente>(url, cliente)
   }
+  delete(id: number | any): Observable<Cliente> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<Cliente>(url).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
+  }
+
+
+
   errorHandler(e: any): Observable<any> {
     this.showMessage("Ocorreu um erro!", true);
     return EMPTY;
