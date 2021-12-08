@@ -16,6 +16,7 @@ import { HomeComponent } from './views/home/home.component';
 import { ClientesCrudComponent } from './views/clientes-crud/clientes-crud.component';
 import { ClienteCreateComponent } from './components/clieente/cliente-create/cliente-create.component'
 import { MatButtonModule } from '@angular/material/button';
+import  {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
 
   ],
   providers: [],
