@@ -26,6 +26,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import localePt from '@angular/common/locales/pt';
 import {registerLocaleData} from '@angular/common';
+import { ClienteUpdateComponent } from './components/clieente/cliente-update/cliente-update.component';
 
 registerLocaleData(localePt);
 
@@ -39,7 +40,8 @@ registerLocaleData(localePt);
     ClientesCrudComponent,
 
     ClienteCreateComponent,
-      ClienteReadComponent
+      ClienteReadComponent,
+      ClienteUpdateComponent
   ],
   imports: [
     MatToolbarModule,

@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-title>Alterar Cliente</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome"[(ngModel)] = "cliente.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Endereco" [(ngModel)] = "cliente.endereco" name="endereco">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Data Nascimento" [(ngModel)] = "cliente.data_nascimento" name="data_nascimento">
+        </mat-form-field>
+
+    </form>
+    <button mat-raised-button (click)="updateCliente()" color="primary">
+        Salvar
+    </button>
+    <button mat-raised-button (click)="cancel() ">
+        Cancelar
+    </button>
+</mat-card>

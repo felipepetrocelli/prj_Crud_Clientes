@@ -1,3 +1,4 @@
+import { ClienteUpdateComponent } from './components/clieente/cliente-update/cliente-update.component';
 import { ClienteCreateComponent } from './components/clieente/cliente-create/cliente-create.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -15,6 +16,9 @@ const routes: Routes = [
   }, {
     path: "clientes/create",
     component: ClienteCreateComponent
+  }, {
+    path: "clientes/update/:id",
+    component: ClienteUpdateComponent
   }
 ];
 
