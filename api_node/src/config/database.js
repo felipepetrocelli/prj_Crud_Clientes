@@ -1,10 +1,10 @@
 module.exports = {
     dialect: 'postgres',
-    host: 'localhost',
+    host: 'kesavan.db.elephantsql.com',
     port: '5432',
-    username: 'root',
-    password: '123456',
-    database: 'crud_clientes',
+    username: 'falfltnx',
+    password: '2R-8ma8lb0FpjtwvBpR9asGGMhbKsnhe',
+    database: 'falfltnx',
     define: {
         timestamps: true,
         underscored: true
