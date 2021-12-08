@@ -1,5 +1,6 @@
 export interface Cliente{
     id?: number
-    nome: string
-    dataNascimento: Date
+    nome: String
+    endereco: String
+    data_nascimento: string
 }
