@@ -1,5 +1,6 @@
 import { ClienteService } from './../cliente.service';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cliente-create',
@@ -8,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClienteCreateComponent implements OnInit {
 
-  constructor(private clienteservice: ClienteService) { }
+  constructor(private clienteservice: ClienteService, private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  createCliente(): void {
+    this.clienteservice
+  }
+  cancel(): void {
+    this.router.navigate(['clientes'])
   }
 
 }
