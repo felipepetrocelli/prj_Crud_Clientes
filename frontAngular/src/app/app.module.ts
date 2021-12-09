@@ -12,7 +12,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
 import { ClientesCrudComponent } from './views/clientes-crud/clientes-crud.component';
-import { ClienteCreateComponent } from './components/clieente/cliente-create/cliente-create.component'
+import { ClienteCreateComponent } from './components/cliente/cliente-create/cliente-create.component'
 import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http'
 import { MatSnackBarModule } from '@angular/material/snack-bar';
@@ -20,14 +20,14 @@ import { FormsModule } from '@angular/forms'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input'
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import { ClienteReadComponent } from './components/clieente/cliente-read/cliente-read.component';
+import { ClienteReadComponent } from './components/cliente/cliente-read/cliente-read.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import localePt from '@angular/common/locales/pt';
 import {registerLocaleData} from '@angular/common';
-import { ClienteUpdateComponent } from './components/clieente/cliente-update/cliente-update.component';
-import { ClienteDeleteComponent } from './components/clieente/cliente-delete/cliente-delete.component';
+import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
+import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
 
 registerLocaleData(localePt);
 

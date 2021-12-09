@@ -1,6 +1,6 @@
-import { ClienteDeleteComponent } from './components/clieente/cliente-delete/cliente-delete.component';
-import { ClienteUpdateComponent } from './components/clieente/cliente-update/cliente-update.component';
-import { ClienteCreateComponent } from './components/clieente/cliente-create/cliente-create.component';
+import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
+import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
+import { ClienteCreateComponent } from './components/cliente/cliente-create/cliente-create.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './views/home/home.component'
