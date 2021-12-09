@@ -19,7 +19,7 @@ module.exports = {
         allowNull: false
       },
       data_nascimento: {
-        type: Sequelize.DATE,
+        type: Sequelize.DATEONLY,
         allowNull: false
       },
       created_at: {
